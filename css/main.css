@@ -1,0 +1,83 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Serif Georgian', serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    font-family: 'Noto Serif Georgian', serif;
+}
+
+a:focus{
+    outline: 4px solid #FFB140;
+}
+
+a:hover {
+    text-decoration: underline;
+}  
+
+.header {
+    display: block;
+    width: 100%;
+}
+
+.topheader {
+    display: flex;
+    max-width: 100%;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topheader img {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+}
+
+.searchbar {
+    display: inline-block;
+}
+
+.searchbar input {
+    height: 30px;
+}
+
+.searchbar button {
+    display: inline-block;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    background-color: #FFB140;
+    vertical-align: middle;
+    border-radius: 50%;
+    border: none;
+}
+
+.headernav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #002418;
+    padding: 8px 0;
+}
+
+.headernav li, .headernav a {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2em;
+}
