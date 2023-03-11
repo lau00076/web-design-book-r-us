@@ -123,18 +123,29 @@ a:hover {
 }
 
 .scrollbook {
-    display: block;
-    max-width: calc(100% - 20px);
+    max-width: calc(100% - 40px);
     margin: 0 auto;
-    padding-top: 10px;
+    padding: 10px 0 10px 0;
+    display: grid;    
+    grid-auto-flow: column;
+    gap: 1em;
+    height: 218px;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: both mandatory;
+    scrollbar-width: none;
 }
 
 .scrollbook img {
-    display: inline-block;
-    height: 70px;
+    display: block;
+    height: 200px;
+    scroll-snap-align: center;
 }
 
-
+.scrolldot svg {
+    display: block;
+    margin: 0 auto;
+}
 
 /* styling footer */
 footer {
