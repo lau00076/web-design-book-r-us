@@ -4,10 +4,6 @@ body {
     font-family: 'Noto Serif Georgian', serif;
 }
 
-main {
-    padding: 2px;
-}
-
 h1 {
     font-size: 2em;
     font-family: 'Libre Baskerville', serif;
@@ -112,6 +108,32 @@ a:hover {
 }
 
 /* styling main body */
+.banner {
+    display: block;
+    width: 100%;
+}
+
+.browsebook {
+    background-color: #002418;
+    padding: 10px;
+}
+
+.browsebook h2 {
+    color: white;
+}
+
+.scrollbook {
+    display: block;
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.scrollbook img {
+    display: inline-block;
+    height: 70px;
+}
+
 
 
 /* styling footer */
