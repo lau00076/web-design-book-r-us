@@ -50,7 +50,7 @@ a:hover {
 
   .skip-links a{
     position: absolute;
-    top: -3em;
+    top: -30em;
     background-color: black;
     color:white;
     padding: .5em 1em;
@@ -62,12 +62,15 @@ a:hover {
 
 /* styling header */
 .header {
+    position: fixed;
+    top: 0;
     display: block;
     width: 100%;
 }
 
 .topheader {
     display: flex;
+    background-color: white;
     max-width: 100%;
     padding: 8px;
     justify-content: space-between;
@@ -100,22 +103,31 @@ a:hover {
     border: none;
 }
 
-.headernav ul {
+.topmenu ul {
     display: flex;
     justify-content: space-evenly;
     background-color: #002418;
     padding: 8px 0;
 }
 
-.headernav li, .headernav a {
+.topmenu a {
+    position: relative;
     color: white;
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
+  
+.topmenu a:active {
+    color: #D4F5F5;
+  }
 
 /* styling main body */
+main {
+    margin-top: calc(68px + 1.5em);
+}
+
 /* styling banner part */
-.banner {
+.banner img {
     display: block;
     width: 100%;
 }
@@ -134,7 +146,7 @@ a:hover {
     max-width: calc(100% - 40px);
     margin: 0 auto;
     padding: 10px 0 10px 0;
-    display: grid;    
+    display: grid;
     grid-auto-flow: column;
     align-items: center;
     gap: 1em;
@@ -210,16 +222,18 @@ a:hover {
     border-top: solid 0.8px black;  
     width: 100%;
     height: 100px; 
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 /* styling footer */
 footer {
+    position: bottom;
+    bottom: 0;
     display: flex;
     background-color: #002418;
     color: #ffffff;
     font-size: 0.8em;
-    max-width: 100%;
+    width: 100%;
     margin-top: 10px;
     padding: 8px;
     justify-content: space-between;
