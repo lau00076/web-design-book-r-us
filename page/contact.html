@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS reset-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+     <!-- icon stylesheet -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@200;400&display=swap" rel="stylesheet">
+    <title>Book R Us</title>
+</head>
+<body>
+    <ul role="navigation" class="skip-links">
+        <li><a href="#events" aria-label="Skip to Events">Skip to Events</a></li>
+        <li><a href="#footer" aria-label="Skip to the footer">Skip to the footer</a></li>
+      </ul>
+    <!-- header divided into two parts -->
+    <header role="banner" class="header" id="header">
+        <div class="topheader">
+            <a href="home.html" aria-label="Go to the home page"><img src="../images/book_r_us_logo.png" alt="Book R Us's logo"></a>
+            <form role="search" class="searchbar" action="#">
+                <input type="text" name="search" placeholder="Search">
+                <button type="submit" role="button"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <nav role="navigation" class="topmenu">
+            <ul>
+                <li><a href="home.html" aria-label="Go to the home page">Home</a></li>
+                <li itemscope itemtype="https://schema.org/AboutPage"><a href="about.html" aria-label="Go to the about page" itemprop="relatedLink">About</a></li>
+                <li itemscope itemtype="https://schema.org/ContactPage"><a href=" contact.html" aria-label="Go to the contact page" itemprop="relatedLink">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main body -->
+    <main role="main">
+        <!-- set images in different resulotion for different media queries -->        
+        <picture class="banner">
+            <source srcset="../images/banner_img/contact_top_img_480_270.jpeg,
+                            ../images/banner_img/contact_top_img_960_540.jpeg 2x"
+                    media="(min-width: 480px)" />
+            <source srcset="../images/banner_img/contact_top_img_960_540.jpeg,
+            ../images/banner_img/contact_top_img_1920_1080.jpeg 2x"
+                    media="(min-width: 960px)" />
+            <img src="../images/banner_img/contact_top_img_480_270.jpeg" alt="contact page banner a girl reading a book">
+        </picture>
+        <section class="content text-content">
+            <h2>Contact Us</h2>
+            <section>
+                <div>
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div>
+                    <h4></h4>
+                    <table></table>
+                </div>
+            </section>
+            
+        </section>
+        <div class="dotted-divider">
+            <svg width="200" height="20" viewBox="40 0 20 20">
+                <g>
+                    <circle cx="20" cy="10" r="10" fill="#FFB140"/>
+                    <circle cx="50" cy="10" r="10" fill="#FFB140"/>
+                    <circle cx="80" cy="10" r="10" fill="#FFB140"/>
+                </g>
+          </svg>
+        </div>
+    </main>
+    <footer role="contentinfo" id="footer">
+        <div class="footer-left">
+            <p>&copy; Book R Us 2023</p>
+            <p>All images are taken from <a href="https://stock.adobe.com/ca/" target="_blank">Adobe Stock</a></p>
+            <br>
+            <p><sub><a href="#header" aria-label="Back to top">Back to Top</a></sub></p>
+        </div>
+        <div class="footer-right" itemscope itemtype="https://schema.org/LocalBusiness">
+            <p itemprop="address">1385 Woodroffe Ave
+                Ottawa, Ontario</p>
+            <p itemprop="address">K2G 1V8</p>
+            <p itemprop="address">613-727-4723</p>
+        </div>
+    </footer>
+</body>
+</html>
