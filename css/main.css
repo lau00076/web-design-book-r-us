@@ -129,7 +129,7 @@ main {
 /* styling banner part */
 .banner img {
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
 .browsebook {
@@ -185,11 +185,14 @@ main {
     margin: 0 auto;
 }
 
-/* styling events part */
+.main-content {
+    padding: 20px 24px 0 24px;
+}
+
+/* Use grid to control elements in different viewport */
 .event {
     display: grid;
     grid-auto-flow: row;
-    padding: 20px 24px 0 24px;
     line-height: 1.1;
 }
 
@@ -213,6 +216,20 @@ main {
 
 .event-intro h4 {
     font-weight: bold;
+}
+
+.event-more {
+    font-family: 'Noto Serif Georgian', serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.6em;
+    background-color: black;
+    color: white;
+    border-radius: 2em;
+    border: none;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .event-details {
