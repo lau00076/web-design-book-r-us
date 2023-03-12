@@ -1,8 +1,9 @@
 /* default */
 body {
     font-family: 'Libre Baskerville', serif;
-    font-family: 'Noto Serif Georgian', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
+    line-height: 1.2;
 }
 
 h1 {
@@ -71,7 +72,7 @@ a:hover {
 .topheader {
     display: flex;
     background-color: white;
-    max-width: 100%;
+    max-width: calc(100% - 16px);
     padding: 8px;
     justify-content: space-between;
     align-items: center;
@@ -92,11 +93,9 @@ a:hover {
 }
 
 .searchbar button {
-    display: inline-block;
     cursor: pointer;
     height: 36px;
     width: 36px;
-    display: inline-block;
     background-color: #FFB140;
     vertical-align: middle;
     border-radius: 50%;
@@ -107,6 +106,7 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     background-color: #002418;
+    max-width: 100%;
     padding: 8px 0;
 }
 
@@ -126,10 +126,15 @@ main {
     margin-top: calc(68px + 1.5em);
 }
 
+.content {
+    padding: 20px 24px 0 24px;
+}
+
+/* styling home page */
 /* styling banner part */
 .banner img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 .browsebook {
@@ -185,15 +190,11 @@ main {
     margin: 0 auto;
 }
 
-.main-content {
-    padding: 20px 24px 0 24px;
-}
-
-/* Use grid to control elements in different viewport */
+/* apply grid on event boxes to control elements in different viewport */
 .event {
     display: grid;
     grid-auto-flow: row;
-    line-height: 1.1;
+
 }
 
 .event-box {
@@ -242,6 +243,43 @@ main {
     overflow-y: auto;
 }
 
+/* styling about page */
+.text-content div {
+    padding: 10px 0;
+    margin-bottom: 16px;
+}
+
+.text-content h2 {
+    color: #95190C;
+}
+
+.text-content p {
+    padding-top: 6px;
+}
+
+.dotted-divider svg {
+    display: block;
+    margin: 24px auto;
+}
+
+.contact-redirect {
+    text-align: center;
+}
+
+.contact-redirect h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.contact-redirect button {
+    background-color: #FFB140;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    padding: 10px 24px;
+}
+
 /* styling footer */
 footer {
     position: bottom;
@@ -250,7 +288,7 @@ footer {
     background-color: #002418;
     color: #ffffff;
     font-size: 0.8em;
-    width: 100%;
+    max-width: calc(100% - 16px);
     margin-top: 10px;
     padding: 8px;
     justify-content: space-between;
