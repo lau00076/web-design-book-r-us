@@ -40,15 +40,15 @@
     </header>
     <!-- main body -->
     <main>
-        <!-- set images in different resulotion for different media queries -->
-        <picture>
+        <!-- set images in different resulotion for different media queries -->        
+        <picture class="banner">
             <source srcset="images/banner_img/home_top_img_480_270.jpeg,
                             images/banner_img/home_top_img_960_540.jpeg 2x"
                     media="(min-width: 480px)" />
             <source srcset="images/banner_img/home_top_img_960_540.jpeg,
                             images/banner_img/home_top_img_1920_1080.jpeg 2x"
                     media="(min-width: 960px)" />
-            <img class="banner" src="images/banner_img/home_top_img_480_270.jpeg" alt="home page banner a group of people chating in a room happily">
+            <img src="images/banner_img/home_top_img_480_270.jpeg" alt="home page banner a group of people chating in a room happily">
         </picture>
         <div class="browsebook">
             <h2>Browse for more...</h2>
@@ -63,6 +63,7 @@
                 <img class="book_img" src="images/book_img/it_starts_with_us.jpeg" alt="book image of It Starts with Us">
                 <img class="book_img" src="images/book_img/a_light_in_the_flame.jpeg" alt="book image ofA Light in the Flame">
             </div>
+            <!-- use SVG to create simple scalable vector -->
             <div class="scrolldot">
                 <svg width="200" height="40" viewBox="0 0 260 10">
                     <g>
@@ -79,14 +80,40 @@
                 </svg>
             </div>
         </div>
-        <div class="eventbox">
-            <h2>Events</h2>
-            <section class="event-intro">
-                <h3 class="event-name">Event A</h3>
-                <button class="event-more" type="submit">More</button>
+        <section class="event">
+            <!-- use SVG to adjust the size of triangle depending on "Events" -->
+            <h2>Events<svg height="25" width="25" viewBox="0 0 50 100">
+                <polygon points="0,10 0,100 70,55" fill="black" />
+              </svg></h2>
+            <div class="event-box white">                
+                <div class="event-intro">
+                    <h4 class="event-name">EVENT A</h4>
+                    <button class="event-more" type="submit">More</button>
+                </div>
                 <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
-            </section>
-        </div>
+            </div>
+            <div class="event-box azureish">                
+                <div class="event-intro">
+                    <h4 class="event-name">EVENT B</h4>
+                    <button class="event-more" type="submit">More</button>
+                </div>
+                <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
+            </div>
+            <div class="event-box white">                
+                <div class="event-intro">
+                    <h4 class="event-name">EVENT C</h4>
+                    <button class="event-more" type="submit">More</button>
+                </div>
+                <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
+            </div>
+            <div class="event-box azureish">                
+                <div class="event-intro">
+                    <h4 class="event-name">EVENT D</h4>
+                    <button class="event-more" type="submit">More</button>
+                </div>
+                <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
+            </div>
+        </section>
     </main>
     <footer id="footer">
         <div class="footer-left">
