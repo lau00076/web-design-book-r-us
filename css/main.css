@@ -108,6 +108,7 @@ a:hover {
 }
 
 /* styling main body */
+/* styling banner part */
 .banner {
     display: block;
     width: 100%;
@@ -128,6 +129,7 @@ a:hover {
     padding: 10px 0 10px 0;
     display: grid;    
     grid-auto-flow: column;
+    align-items: center;
     gap: 1em;
     height: 218px;
     overflow-y: auto;
@@ -142,9 +144,48 @@ a:hover {
     scroll-snap-align: center;
 }
 
+.scrollbook img:nth-child(1), img:nth-child(9) {
+    height: 100px;
+}
+
+.scrollbook img:nth-child(2), img:nth-child(8) {
+    height: 120px;
+}
+
+.scrollbook img:nth-child(3), img:nth-child(7) {
+    height: 150px;
+}
+
+.scrollbook img:nth-child(4), img:nth-child(6) {
+    height: 180px;
+}
+
 .scrolldot svg {
     display: block;
     margin: 0 auto;
+}
+
+/* styling events part */
+.eventbox {
+    display: grid;
+    padding: 40px;
+    line-height: 1.1;
+}
+
+.event-intro {
+    display: block;
+    border: solid 1px black;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+.event-details {
+    display: block; 
+    border-top: solid 0.8px black;  
+    width: 100%;
+    height: 100px; 
+    overflow: scroll;
 }
 
 /* styling footer */

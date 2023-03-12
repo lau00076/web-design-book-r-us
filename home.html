@@ -40,19 +40,28 @@
     </header>
     <!-- main body -->
     <main>
-        <img class="banner" src="images/home_top_img.jpeg" alt="banner on home page">
+        <!-- set images in different resulotion for different media queries -->
+        <picture>
+            <source srcset="images/banner_img/home_top_img_480_270.jpeg,
+                            images/banner_img/home_top_img_960_540.jpeg 2x"
+                    media="(min-width: 480px)" />
+            <source srcset="images/banner_img/home_top_img_960_540.jpeg,
+                            images/banner_img/home_top_img_1920_1080.jpeg 2x"
+                    media="(min-width: 960px)" />
+            <img class="banner" src="images/banner_img/home_top_img_480_270.jpeg" alt="home page banner a group of people chating in a room happily">
+        </picture>
         <div class="browsebook">
             <h2>Browse for more...</h2>
             <div class="scrollbook">
-                <img class="book_img" src="images/book_img_five_survive.jpeg" alt="book image of">
-                <img class="book_img" src="images/book_img_heart_of_the_sun_warrior.jpeg" alt="book image of">
-                <img class="book_img" src="images/book_img_babel.jpeg" alt="book image of">
-                <img class="book_img" src="images/book_img_the_sadness_book.jpeg" alt="book image of">
-                <img class="book_img" src="images/book_img_healing_through_words.jpeg" alt="book image of">
-                <img class="book_img" src="images/book_img_who_is_wellness_for.jpeg" alt="book image of">
-                <img class="book_img" src="images/book_img_chainsaw_man.jpeg" alt="book image of">
-                <img class="book_img" src="images/book_img_it_starts_with_us.jpeg" alt="book image of">
-                <img class="book_img" src="images/book_img_a_light_in_the_flame.jpeg" alt="book image of">
+                <img class="book_img" src="images/book_img/five_survive.jpeg" alt="book image of Five Survive">
+                <img class="book_img" src="images/book_img/heart_of_the_sun_warrior.jpeg" alt="book image of Heart of the Sun Warrior">
+                <img class="book_img" src="images/book_img/babel.jpeg" alt="book image of Babel">
+                <img class="book_img" src="images/book_img/the_sadness_book.jpeg" alt="book image of The Sadness Book">
+                <img class="book_img" src="images/book_img/healing_through_words.jpeg" alt="book image of Healing through Words">
+                <img class="book_img" src="images/book_img/who_is_wellness_for.jpeg" alt="book image of Who is Wellness for">
+                <img class="book_img" src="images/book_img/chainsaw_man.jpeg" alt="book image of Chainsaw Man">
+                <img class="book_img" src="images/book_img/it_starts_with_us.jpeg" alt="book image of It Starts with Us">
+                <img class="book_img" src="images/book_img/a_light_in_the_flame.jpeg" alt="book image ofA Light in the Flame">
             </div>
             <div class="scrolldot">
                 <svg width="200" height="40" viewBox="0 0 260 10">
@@ -72,7 +81,11 @@
         </div>
         <div class="eventbox">
             <h2>Events</h2>
-            <section class="eventintro"></section>
+            <section class="event-intro">
+                <h3 class="event-name">Event A</h3>
+                <button class="event-more" type="submit">More</button>
+                <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
+            </section>
         </div>
     </main>
     <footer id="footer">
