@@ -25,7 +25,7 @@
     <header role="banner" class="header" id="header">
         <div class="topheader">
             <a href="home.html" aria-label="Go to the home page"><img src="../images/book_r_us_logo.png" alt="Book R Us's logo"></a>
-            <form role="search" class="searchbar" action="#">
+            <form role="search" class="searchbar" action="#" role="searchbox">
                 <input type="text" name="search" placeholder="Search">
                 <button type="submit" role="button"><i class="fa fa-search"></i></button>
             </form>
@@ -34,7 +34,7 @@
             <ul>
                 <li><a href="home.html" aria-label="Go to the home page">Home</a></li>
                 <li itemscope itemtype="https://schema.org/AboutPage"><a href="about.html" aria-label="Go to the about page" itemprop="relatedLink">About</a></li>
-                <li itemscope itemtype="https://schema.org/ContactPage"><a href=" contact.html" aria-label="Go to the contact page" itemprop="relatedLink">Contact</a></li>
+                <li itemscope itemtype="https://schema.org/ContactPage"><a href="contact.html" aria-label="Go to the contact page" itemprop="relatedLink">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -50,7 +50,7 @@
                     media="(min-width: 960px)" />
             <img src="../images/banner_img/about_top_img_480_270.jpeg" alt="about page banner a group of people chating in a room happily">
         </picture>
-        <section class="content text-content">
+        <section class="content about-content">
             <div class="about" id="about-text">
                 <h2 role="heading">About</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
@@ -74,8 +74,10 @@
           </svg>
         </div>
         <div class="content contact-redirect">
-            <h2 role="heading">Anything like to share?</h2>
-            <button type="submit" role="button"><a href="#contact.html">CHECK HERE!</a></button>
+            <div class="typing">
+                <h2 role="heading">Anything like to share?</h2>
+            </div>
+            <button type="submit" role="button"><a href="contact.html">CHECK HERE!</a></button>
         </div>
     </main>
     <footer role="contentinfo" id="footer">
