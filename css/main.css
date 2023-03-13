@@ -345,18 +345,23 @@ footer div {
 
 /* styling contact page */
 .contact-content {
-    /* display: gird;
+    display: grid;
     grid-template-areas: 
+    "cu cu"
     "call call" 
     "email email" 
     "addr sthr"
     "map map";
     grid-template-columns: 1fr 1fr;
-    column-gap: 1em; */
+    column-gap: 1em;
 }
 
 .contact-content h2{
     color: #95190C;
+}
+
+.cu{
+    grid-area: cu;
 }
 
 .contact {
@@ -375,6 +380,10 @@ footer div {
 
 .contact table {
     width: 100%;
+}
+
+.contact table td {
+    width: 50%;
 }
 
 .call {
