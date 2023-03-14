@@ -17,17 +17,17 @@
     <title>Book R Us</title>
 </head>
 <body>
-    <ul role="navigation" class="skip-links">
-        <li><a href="#events" aria-label="Skip to Events">Skip to Events</a></li>
-        <li><a href="#footer" aria-label="Skip to the footer">Skip to the footer</a></li>
+    <ul class="skip-links" role="landmark">
+        <li><a href="#events" aria-label="Skip to Events"><sup>Skip to Events</sup></a></li>
+        <li><a href="#footer" aria-label="Skip to the footer"><sup>Skip to the footer</sup></a></li>
       </ul>
     <!-- header divided into two parts -->
-    <header role="banner" class="header" id="header">
+    <header class="header" id="header" role="landmark">
         <div class="topheader">
             <a href="home.html" aria-label="Go to the home page"><img src="../images/book_r_us_logo.png" alt="Book R Us's logo"></a>
-            <form role="search" class="searchbar" action="#" role="searchbox">
+            <form class="searchbar" action="#" role="search">
                 <input type="text" name="search" placeholder="Search">
-                <button type="submit" role="button"><i class="fa fa-search"></i></button>
+                <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
         <nav role="navigation" class="topmenu">
@@ -41,7 +41,7 @@
     <!-- main body -->
     <main role="main">
         <!-- set images in different resulotion for different media queries -->        
-        <picture class="banner">
+        <picture class="banner" role="banner">
             <source srcset="../images/banner_img/home_top_img_480_270.jpeg,
                             ../images/banner_img/home_top_img_960_540.jpeg 2x"
                     media="(min-width: 480px)" />
@@ -51,7 +51,7 @@
             <img src="../images/banner_img/home_top_img_480_270.jpeg" alt="home page banner two people sharing books">
         </picture>
         <div class="browsebook">
-            <h2 role="heading">Browse for more...</h2>
+            <h2>Browse for more...</h2>
             <div class="scrollbook">
                 <img class="book_img" id="book-1" src="../images/book_img/five_survive.jpeg" alt="book image of Five Survive">
                 <img class="book_img" id="book-2" src="../images/book_img/heart_of_the_sun_warrior.jpeg" alt="book image of Heart of the Sun Warrior">
@@ -83,34 +83,34 @@
         </div>
         <section class="content event-content">
             <!-- use SVG to adjust the size of triangle depending on "Events" -->
-            <h2 role="heading">Events<svg height="25" width="25" viewBox="0 0 50 100">
+            <h2>Events<svg height="25" width="25" viewBox="0 0 50 100">
                 <polygon points="0,10 0,100 70,55" fill="black" />
               </svg></h2>
             <div class="event-box white">                
                 <div class="event-intro">
                     <h4 class="event-name">EVENT A</h4>
-                    <button class="event-more" type="submit" role="button">More</button>
+                    <button class="event-more" type="submit">More</button>
                 </div>
                 <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
             </div>
             <div class="event-box azureish">                
                 <div class="event-intro">
                     <h4 class="event-name">EVENT B</h4>
-                    <button class="event-more" type="submit" role="button">More</button>
+                    <button class="event-more" type="submit">More</button>
                 </div>
                 <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
             </div>
             <div class="event-box white">                
                 <div class="event-intro">
                     <h4 class="event-name">EVENT C</h4>
-                    <button class="event-more" type="submit" role="button">More</button>
+                    <button class="event-more" type="submit">More</button>
                 </div>
                 <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
             </div>
             <div class="event-box azureish">                
                 <div class="event-intro">
                     <h4 class="event-name">EVENT D</h4>
-                    <button class="event-more" type="submit" role="button">More</button>
+                    <button class="event-more" type="submit">More</button>
                 </div>
                 <p class="event-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
             </div>

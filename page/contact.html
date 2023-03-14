@@ -14,20 +14,20 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@200;400&display=swap" rel="stylesheet">
-    <title>Book R Us</title>
+    <title>Book R Us: Contact</title>
 </head>
 <body>
-    <ul role="navigation" class="skip-links">
-        <li><a href="#events" aria-label="Skip to Events">Skip to Events</a></li>
-        <li><a href="#footer" aria-label="Skip to the footer">Skip to the footer</a></li>
+    <ul class="skip-links" role="landmark">
+        <li><a href="#map" aria-label="Skip to Location"><sup>Skip to Location</a></li>
+        <li><a href="#footer" aria-label="Skip to the footer"><sup>Skip to the footer</sup></a></li>
       </ul>
     <!-- header divided into two parts -->
-    <header role="banner" class="header" id="header">
+    <header class="header" id="header" role="landmark">
         <div class="topheader">
             <a href="home.html" aria-label="Go to the home page"><img src="../images/book_r_us_logo.png" alt="Book R Us's logo"></a>
-            <form role="search" class="searchbar" action="#">
+            <form class="searchbar" action="#" role="search">
                 <input type="text" name="search" placeholder="Search">
-                <button type="submit" role="button"><i class="fa fa-search"></i></button>
+                <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
         <nav role="navigation" class="topmenu">
@@ -41,7 +41,7 @@
     <!-- main body -->
     <main role="main">
         <!-- set images in different resulotion for different media queries -->        
-        <picture class="banner">
+        <picture class="banner contact-banner" role="banner">
             <source srcset="../images/banner_img/contact_top_img_480_270.jpeg,
                             ../images/banner_img/contact_top_img_960_540.jpeg 2x"
                     media="(min-width: 480px)" />
@@ -51,14 +51,14 @@
             <img src="../images/banner_img/contact_top_img_480_270.jpeg" alt="contact page banner a girl reading a book">
         </picture>
         <div class="content contact-content"  itemscope itemtype="https://schema.org/LocalBusiness">
-            <h2 class="cu" role="heading">Contact Us</h2>
+            <h2 class="cu">Contact Us</h2>
             <section class="contact call" id="call">
                 <div class="contact-method">
-                    <h4 role="heading">By Call</h4>
+                    <h4>By Call</h4>
                     <p>613-727-4723</p>
                 </div>
                 <div class="contact-operation" itemprop="openingHours">
-                    <h4 role="heading">Hours of Opeartion</h4>
+                    <h4>Hours of Opeartion</h4>
                     <table role="table">
                         <tbody>
                             <tr>
@@ -79,11 +79,11 @@
             </section>
             <section class="contact  email azureish" id="email">
                 <div class="contact-method">
-                    <h4 role="heading">By Email</h4>
+                    <h4>By Email</h4>
                     <p itemprop="email">bookrus@bookrus.com</p>
                 </div>
                 <div class="contact-operation" itemprop="openingHours">
-                    <h4 role="heading">Hours of Opeartion</h4>
+                    <h4>Hours of Opeartion</h4>
                     <table role="table">
                         <tbody>
                             <tr>
@@ -100,7 +100,7 @@
             </section>
             <section class="contact address" id="address">
                 <div class="contact-method" itemprop="address">
-                    <h4 role="heading">Address</h4>
+                    <h4>Address</h4>
                     <p>1385 Woodroffe Ave</p>
                     <p>Ottawa, Ontario</p>
                     <p>K2G 1V8</p>
@@ -108,7 +108,7 @@
             </section>
             <section class="contact sthr" id="sthr">
                 <div class="contact-operation" itemprop="openingHours">
-                    <h4 role="heading">Store Hours</h4>
+                    <h4>Store Hours</h4>
                     <table role="table">
                         <tbody>
                             <tr>
@@ -129,8 +129,8 @@
             </section>            
             <section class="contact location" id="map">
                 <div class="contact-method">
-                    <h4 role="heading">Location</h4>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.991523306007!2d-75.75945778444643!3d45.34898337909974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669238926143!5m2!1sen!2sca" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h4>Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.991523306007!2d-75.75945778444643!3d45.34898337909974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669238926143!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
         </div>

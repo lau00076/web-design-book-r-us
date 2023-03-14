@@ -14,20 +14,22 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@200;400&display=swap" rel="stylesheet">
-    <title>Book R Us</title>
+    <title>Book R Us: About</title>
 </head>
 <body>
-    <ul role="navigation" class="skip-links">
-        <li><a href="#events" aria-label="Skip to Events">Skip to Events</a></li>
-        <li><a href="#footer" aria-label="Skip to the footer">Skip to the footer</a></li>
+    <ul class="skip-links" role="landmark">
+        <li><a href="#about-text" aria-label="Skip to About"><sup>Skip to About</sup></a></li>
+        <li><a href="#mission-text" aria-label="Skip to Mission"><sup>Skip to Mission</sup></a></li>
+        <li><a href="#vision-text" aria-label="Skip to Vision"><sup>Skip to Vision</sup></a></li>
+        <li><a href="#footer" aria-label="Skip to the footer"><sup>Skip to the footer</sup></a></li>
       </ul>
     <!-- header divided into two parts -->
-    <header role="banner" class="header" id="header">
+    <header class="header" id="header" role="landmark">
         <div class="topheader">
             <a href="home.html" aria-label="Go to the home page"><img src="../images/book_r_us_logo.png" alt="Book R Us's logo"></a>
-            <form role="search" class="searchbar" action="#" role="searchbox">
+            <form class="searchbar" action="#" role="search">
                 <input type="text" name="search" placeholder="Search">
-                <button type="submit" role="button"><i class="fa fa-search"></i></button>
+                <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
         <nav role="navigation" class="topmenu">
@@ -41,7 +43,7 @@
     <!-- main body -->
     <main role="main">
         <!-- set images in different resulotion for different media queries -->        
-        <picture class="banner">
+        <picture class="banner" role="banner">
             <source srcset="../images/banner_img/about_top_img_480_270.jpeg,
                             ../images/banner_img/about_top_img_960_540.jpeg 2x"
                     media="(min-width: 480px)" />
@@ -52,15 +54,15 @@
         </picture>
         <section class="content about-content">
             <div class="about" id="about-text">
-                <h2 role="heading">About</h2>
+                <h2>About</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue felis, gravida et sagittis non, blandit quis arcu. Vivamus eros purus, dapibus non blandit eu, sodales sed lectus. Quisque porta tortor sed magna laoreet, eget iaculis dui mattis. Sed at tempus dui. Morbi laoreet molestie lorem eget laoreet. Etiam dapibus nisl magna, id porttitor est scelerisque eget. Sed id gravida neque, ut pharetra nisi. Fusce rutrum, lorem at mollis tempus, quam augue bibendum felis, sed vehicula sem risus nec elit. Duis sem lacus, pretium eget feugiat quis, elementum nec sapien. Sed maximus augue et ex malesuada vehicula. Etiam lacus ipsum, tristique sit amet consectetur eu, condimentum ac massa. Morbi vel est non purus finibus convallis. Sed porttitor arcu magna, nec mattis dolor vehicula eget. Donec malesuada dolor sed tempor eleifend. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque aliquam facilisis lobortis.</p>
             </div>
             <div class="mission" id="mission-text">
-                <h2 role="heading">Mission</h2>
+                <h2>Mission</h2>
                 <p>To get younger adults/teens back into conventional reading.</p>
             </div>
             <div class="vision" id="vision-text">
-                <h2 role="heading">Vision</h2>
+                <h2>Vision</h2>
                 <p>Make reading fun and to allow a safe space for young people to share their minds.</p>
             </div>
         </section>
@@ -75,9 +77,9 @@
         </div>
         <div class="content contact-redirect">
             <div class="typing">
-                <h2 role="heading">Anything like to share?</h2>
+                <h2>Anything like to share?</h2>
             </div>
-            <button type="submit" role="button"><a href="contact.html">CHECK HERE!</a></button>
+            <button type="submit"><a href="contact.html">CHECK HERE!</a></button>
         </div>
     </main>
     <footer role="contentinfo" id="footer">
